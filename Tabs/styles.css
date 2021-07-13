@@ -1,0 +1,96 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #444;
+}
+.container_ {
+  max-width: 900px;
+  min-height: 400px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.container_ ul {
+  list-style: none;
+  padding: 0;
+}
+.container_ ul li {
+  display: inline-flex;
+}
+
+.container_ ul li a {
+  text-decoration: none;
+  color: darkgray;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+.container_ ul li a:hover {
+  color: #5ab3c4;
+}
+
+.nav .active a {
+  transition: all 0.3s ease-in-out;
+  color: #184366;
+  border-bottom: 3px solid #ffe600;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.elementary__container,
+.middle__container,
+.high__container,
+.program_centers__container {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.elementary__container .schools__elementary_item,
+.middle__container .schools__middle_item,
+.high__container .schools__high_item,
+.program_centers__container .schools__program_centers_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
+  padding: 0.5rem;
+  margin: 0.3rem;
+}
+
+/* Specific Style */
+.middle__container .schools__middle_item,
+.high__container .schools__high_item,
+.program_centers__container .schools__program_centers_item {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* General Style  */
+
+.elementary__container .schools__elementary_item a,
+.middle__container .schools__middle_item a,
+.high__container .schools__high_item a,
+.program_centers__container .schools__program_centers_item a {
+  text-decoration: none;
+  color: #032450;
+}
+
+/* General Style  */
+
+.middle__container .schools__middle_item a,
+.high__container .schools__high_item a,
+.program_centers__container .schools__program_centers_item a {
+  padding-bottom: 1.5rem;
+}
+
+.elementary__container .schools__elementary_item a:hover {
+  text-decoration: none;
+  color: #e95b37;
+}
